@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #4a8259;
+  --color-primary-hover: #3d6b4a;
+  --color-header: #2c5530;
+  --color-user-message: #68a691;
+  --color-bot-message: #f0f4f1;
+  --color-background: #f7f9f8;
+  --color-input: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background: transparent !important;
+}
+
+#app {
+  height: 100vh;
+  background: transparent !important;
+}
+
+h3 {
+  text-align: center;
+}
+
+.send-btn {
+  background-color: var(--color-primary);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.send-btn:hover {
+  background-color: var(--color-primary-hover);
+  transform: scale(1.05);
+}
+
+.send-btn:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.eco-header {
+  background-color: var(--color-header);
+}
+
+.eco-message-user {
+  background-color: var(--color-user-message);
+}
+
+.eco-message-bot {
+  background-color: var(--color-bot-message);
+}
+
+.header-icon {
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+}
